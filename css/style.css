@@ -73,12 +73,29 @@ img{
 }
 
 .login__registre, .login__create{
+  position: absolute;
+  bottom: 1rem;
   width: 100%;
   background-color: var(--first-color-lighten);
   padding: 2rem 1rem;
   border-radius: 1rem;
   text-align: center;
   box-shadow: 0 8px 20px rgba(35, 0, 77, .2);
+  animation-duration:  .4s;
+  animation-name: animation-login;
+}
+
+@keyframes animation-login{
+  0%{
+    transform: scale(1,1);
+  }
+  50%{
+    transform: scale(1.1,1.1);
+  }
+  100%{
+    transform: scale(1,1);
+  }
+  
 }
 
 .login__title{
@@ -165,6 +182,15 @@ img{
   margin: 0 1.5rem;
 }
 
+/* Show Login */
+.block{
+  display: block;
+}
+
+/* Hidden Login */
+.none{
+  display: none;
+}
 
 
 
